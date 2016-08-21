@@ -1,0 +1,22 @@
+public class StringIndexException {
+ 
+    public static void main(String... srr) {
+        String[] names = { "", "rajan", "ravisharma"};
+ 
+        int row=10;
+        int column=10;
+        char[][] matrix = new char[row][column];
+         
+        String garbage="";
+         
+        for (int x = 0; x < row && x< names.length; x++) {
+            garbage = names[x];
+ 
+            for (int z = 0; z < column; z++) {
+                matrix[x][z] = garbage.charAt(z);
+            }
+        }
+ 
+    }
+ 
+}
